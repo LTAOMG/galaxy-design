@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Growth - Official Docs</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+
+        h1 { margin-top: 0; border-bottom: 2px solid #7000ff; padding-bottom: 10px; }
+        h2 { color: #fff; margin-top: 40px; border-left: 4px solid #00f3ff; padding-left: 15px; }
+        h3 { color: #aaa; margin-bottom: 5px; }
+
+        .box {
+            background: #252525;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #333;
+        }
+
+        .highlight { color: #00f3ff; font-weight: bold; }
+        .warning { color: #ff4444; font-weight: bold; }
+
+        .row { display: flex; gap: 20px; }
+        .col { flex: 1; }
+
+        /* Table Style */
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #444; padding: 10px; text-align: left; }
+        th { background-color: #333; }
+
+        .note {
+            background-color: #2a2a40;
+            padding: 15px;
+            border-left: 4px solid #7000ff;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Galaxy Growth: Game Manual</h1>
+    <p><strong>Core Concept:</strong> A cosmic idle simulator where players grow stars in "Garden Boxes" to earn energy and unlock rare celestial bodies.</p>
+
+    <!-- THE LOOP -->
+    <h2>1. The Gameplay Loop</h2>
+    <div class="box">
+        <ol>
+            <li><strong>Buy Ingredients:</strong> Spend Energy to buy "Hydrogen Clusters".</li>
+            <li><strong>Place & Wait:</strong> Click a box. The gas spins for 10-30 seconds (Cooking time).</li>
+            <li><strong>The Result (RNG):</strong> The gas collapses into a Star.</li>
+            <li><strong>Passive Income:</strong> That star now generates Energy/sec forever (until you delete it).</li>
+            <li><strong>Upgrade:</strong> Use Energy to buy better gas types (Helium, Iron) or upgrade RNG Luck.</li>
+        </ol>
+    </div>
+
+    <!-- THE STATS -->
+    <h2>2. Star Statistics (How it Works)</h2>
+    <p>Every star has 4 stats. Two are for money, two are for looking cool.</p>
+
+    <div class="row">
+        <div class="col box">
+            <h3>💰 Economy Stats (Functional)</h3>
+            <p><strong>1. Temperature (Base Value):</strong><br>
+            Hotter = More Money. Also determines color (Red, Yellow, Blue).</p>
+            <p><strong>2. Mass (Multiplier):</strong><br>
+            Multiplies the Temperature value. <br>
+            <span class="highlight">Formula: Income = Temp x Mass</span></p>
+        </div>
+        <div class="col box">
+            <h3>✨ Visual Stats (Aesthetic)</h3>
+            <p><strong>3. Size:</strong><br>
+            How big the model is. Purely visual.</p>
+            <p><strong>4. Luminosity:</strong><br>
+            How bright the neon glow is. Rare stars are blindingly bright.</p>
+        </div>
+    </div>
+
+    <!-- PROGRESSION -->
+    <h2>3. Game Progression Stages</h2>
+    <p>How the game changes as the player keeps playing.</p>
+
+    <table>
+        <tr>
+            <th>Stage</th>
+            <th>Gameplay Focus</th>
+            <th>Goal</th>
+        </tr>
+        <tr>
+            <td><strong>Early Game</strong><br>(Hours 0-2)</td>
+            <td><strong>Single Placing</strong><br>Placing 1 Hydrogen at a time. High RNG variance.</td>
+            <td>Fill all 6 boxes with basic Red Dwarfs to stabilize income.</td>
+        </tr>
+        <tr>
+            <td><strong>Mid Game</strong><br>(Hours 2-10)</td>
+            <td><strong>The Fusion System</strong><br>Unlocking Helium. Mixing gases to target specific star types.</td>
+            <td>Unlock the "Blue Giant" star type.</td>
+        </tr>
+        <tr>
+            <td><strong>End Game</strong><br>(Hours 10+)</td>
+            <td><strong>Optimization & War</strong><br>Hunting 0.01% "Black Holes". Dealing with "Gravity Theft" mechanics.</td>
+            <td>Get on the Global Leaderboard.</td>
+        </tr>
+    </table>
+
+    <!-- LONGEVITY SECTION -->
+    <h2>4. Longevity & The "End Game"</h2>
+    <div class="note">
+        <p><strong>"How long will this game last?"</strong></p>
+        <p>If we just let them build stars, they will get bored in 3 days. To make it last <strong>months</strong>, we introduce the "End Game Loop":</p>
+        
+        <ul>
+            <li><strong>The Collection Book (Pokedex):</strong> Players want to find every star type (100+ variations). This takes weeks of RNG rolling.</li>
+            <li><strong>Rebirth (Big Bang):</strong> Reset your galaxy for a permanent "Luck Multiplier". This extends gameplay infinitely.</li>
+            <li><strong>Cosmic War (PvP):</strong> In the end game, players can build "Wormholes". If a neighbor is offline, you can siphon 5% of their gas. This forces players to log in daily to check defenses.</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
